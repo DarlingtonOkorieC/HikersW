@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrnd"
+    tools:context="com.example.darlington.hikersw.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#58000000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HikerWatch"
+            android:textColor="@android:color/holo_orange_light"
+            android:fontFamily="cursive"
+            android:foregroundGravity="bottom"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/latTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="25dp"
+            android:text="Latitude:"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/longTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/latTextview"
+            android:layout_marginTop="25dp"
+            android:text="Longitude:"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/accTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/longTextview"
+            android:layout_marginTop="25dp"
+            android:text="Altitude:"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+
+        <TextView
+            android:id="@+id/accTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/accTextView"
+            android:layout_marginTop="25dp"
+            android:text="Accuracy:"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+
+        <TextView
+            android:id="@+id/Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/accTextview"
+            android:layout_marginTop="25dp"
+            android:text="Address:"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+<Button
+    android:id="@+id/btnMemorable"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/Address"
+    android:layout_centerHorizontal="true"
+    android:textSize="17sp"
+    android:textStyle="bold"
+    android:onClick="btnMemorable"
+    android:fontFamily="serif-monospace"
+    android:text="Markout A Location"
+    android:background="@android:color/transparent"
+    android:textColor="@android:color/holo_orange_light"/>
+        <Button
+            android:id="@+id/btnFriends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnMemorable"
+            android:layout_centerHorizontal="true"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:onClick="friendsYouMet"
+            android:fontFamily="serif-monospace"
+            android:text="Friends You Have met"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/holo_orange_light"/>
+
+    </RelativeLayout>
+</RelativeLayout>
